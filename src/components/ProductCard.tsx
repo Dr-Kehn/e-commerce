@@ -1,4 +1,7 @@
 // src/components/ProductCard.tsx
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from '../redux/store';
+import { addToCart } from '../redux/cartSlice';
 import styles from './ProductCard.module.css';
 
 interface ProductCardProps {
@@ -6,20 +9,34 @@ interface ProductCardProps {
   thumbnail: string;
   price: number;
   discountPercentage: number;
+  id: number;
 }
 
-const ProductCard = ({ title, thumbnail, price, discountPercentage }: ProductCardProps) => {
-  const discountedPrice = (price - (price * discountPercentage) / 100).toFixed(2);
+const ProductCard = ({ title, thumbnail, price, discountPercentage, id }: ProductCardProps) => {
+  const dispatch = useDispatch<AppDispatch>();
+
+  const handleAddToCart = () => {
+    dispatch(
+      addToCart({
+        id,
+        title,
+        thumbnail,
+        price,
+        quantity: 1,
+      })
+    );
+  };
 
   return (
     <div className={styles.card}>
       <img src={thumbnail} alt={title} className={styles.image} />
-      <div className={styles.info}>
-        <h4 className={styles.title}>{title}</h4>
-        <p className={styles.price}>
-          <span className={styles.original}>${price}</span> <span className={styles.discount}>${discountedPrice}</span>
-        </p>
-      </div>
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.price}>
+        ${price} <span className={styles.discount}>-{discountPercentage}%</span>
+      </p>
+      <button onClick={handleAddToCart} className={styles.addButton}>
+        Add to Cart
+      </button>
     </div>
   );
 };

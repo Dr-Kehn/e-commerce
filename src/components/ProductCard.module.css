@@ -43,3 +43,18 @@
   color: #e63946;
   font-weight: bold;
 }
+
+.addButton {
+  margin-top: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #444;
+}
