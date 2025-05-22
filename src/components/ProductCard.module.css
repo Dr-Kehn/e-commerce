@@ -46,9 +46,10 @@
 
 .addButton {
   margin-top: 0.5rem;
-  background-color: #000;
-  color: #fff;
-  border: none;
+  background-color: white;
+  color: #23A6F0;
+  border: #23A6F0 1px solid;
+  border-radius: 6px;
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: 500;
@@ -56,5 +57,5 @@
 }
 
 .addButton:hover {
-  background-color: #444;
+  background-color: #0c76b4;
 }
