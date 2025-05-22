@@ -28,7 +28,7 @@ const Navbar = () => {
       </ul>
       <div className={styles.icons}>
         <Link to="/login"><FaUser /> Login / Register</Link>
-        <FaSearch />
+        <Link to=""><FaSearch /></Link>
         <Link to="/cart">
         <div className={styles.iconWithBadge}>
           <FaShoppingCart />

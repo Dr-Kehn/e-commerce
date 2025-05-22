@@ -53,7 +53,7 @@
 
 .icons a {
   text-decoration: none;
-  color: black;
+  color: #23A6F0;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -62,14 +62,15 @@
 .iconWithBadge {
   position: relative;
   cursor: pointer;
+  color: #23A6F0;
 }
 
 .count {
   position: absolute;
   top: -6px;
   right: -10px;
-  background-color: red;
-  color: white;
+  background-color: transparent;
+  color: #23A6F0;
   border-radius: 50%;
   font-size: 0.7rem;
   padding: 2px 6px;

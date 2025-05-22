@@ -7,11 +7,11 @@ import { Product } from '../types/product';
 
 
 const ProductGrid = () => {
-  const [limit, setLimit] = useState(6);
+  const [limit, setLimit] = useState(8);
   const { data, isLoading, isFetching } = useGetProductsQuery({ limit, skip: 0 });
 
   const handleLoadMore = () => {
-    setLimit((prev) => prev + 6);
+    setLimit((prev) => prev + 8);
   };
 
   return (
