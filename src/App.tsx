@@ -1,13 +1,15 @@
 // src/App.tsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import TopNavbar from './components/TopNavbar';
+import Topbar from './components/Topbar';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 
 function App() {
   return (
     <>
-    <TopNavbar />
+    <Topbar />
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/cart" element={<Cart />} />

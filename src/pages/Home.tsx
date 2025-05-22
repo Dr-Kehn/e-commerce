@@ -4,10 +4,10 @@ import ProductGrid from '../components/ProductGrid';
 
 const Home = () => {
   return (
-    <>
+    <div style={{ paddingTop: '115px' }}>
       <CategoryGrid />
       <ProductGrid />
-    </>
+    </div>
   );
 };
 

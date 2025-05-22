@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
   color: #000;
@@ -12,4 +13,10 @@ a {
 
 button {
   cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

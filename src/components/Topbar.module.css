@@ -1,0 +1,30 @@
+/* src/components/Topbar.module.css */
+.topbar {
+  background-color: rgba(30, 143, 90, 0.979);
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.left, .center, .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.center {
+  font-weight: 500;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}

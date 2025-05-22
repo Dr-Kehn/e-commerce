@@ -16,7 +16,9 @@ const ProductGrid = () => {
 
   return (
     <section className={styles.wrapper}>
-      <h2>Featured Products</h2>
+      <h3>Featured Products</h3>
+      <h2>BESTSELLER PRODUCTS</h2>
+      <h4>Problems trying to resolve the conflict between</h4>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
