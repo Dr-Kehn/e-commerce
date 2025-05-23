@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.testimonial {
+  flex: 1;
+  text-align: center;
+}
+
+.reviewerImage {
+  width: 150px;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  gap: 0.3rem;
+}
+
+.reviewText {
+  font-size: 0.95rem;
+  margin: 1rem 0;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.reviewerName {
+  color: #23A6F0;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.reviewerRole {
+  color: #000;
+  font-weight: bold;
+}
+
+.imageGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.gridImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
