@@ -1,0 +1,93 @@
+/* src/components/Footer.module.css */
+.footer {
+  background-color: #fff;
+  padding: 2rem 6rem;
+  color: #252b42;
+  font-size: 14px;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.logoAndSocials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #252b42;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcons svg {
+  font-size: 20px;
+  color: #23a6f0;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.column h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+
+.column p {
+  margin: 0.3rem 0;
+  text-align: left;
+  color: #737373;
+}
+
+.subscribe {
+  display: flex;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe input {
+  border: none;
+  padding: 0.5rem;
+  flex: 1;
+  outline: none;
+}
+
+.subscribe button {
+  background-color: #23a6f0;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+.helperText {
+  color: #737373;
+  font-size: 12px;
+}
+
+.bottomSection {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 500;
+  font-size: 13px;
+}

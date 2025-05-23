@@ -5,6 +5,7 @@ import BestServices from '../components/BestServices';
 import FeaturedPosts from '../components/FeaturedPosts';
 import ReviewSection from '../components/ReviewSection';
 import CTASection from '../components/CTASection';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <FeaturedPosts />
       <ReviewSection />
       <CTASection />
+      <Footer />
     </div>
   );
 };
