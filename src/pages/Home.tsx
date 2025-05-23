@@ -4,6 +4,7 @@ import ProductGrid from '../components/ProductGrid';
 import BestServices from '../components/BestServices';
 import FeaturedPosts from '../components/FeaturedPosts';
 import ReviewSection from '../components/ReviewSection';
+import CTASection from '../components/CTASection';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <BestServices />
       <FeaturedPosts />
       <ReviewSection />
+      <CTASection />
     </div>
   );
 };

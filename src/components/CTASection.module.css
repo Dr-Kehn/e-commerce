@@ -1,0 +1,60 @@
+/* src/components/CTASection.module.css */
+.ctaSection {
+  background-image: url('/images/cta-background.png'); /* replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tagline {
+  color: #23a6f0;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.description {
+  color: #bcbcbc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: #23856d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+  background-color: #23a6f0;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #1d8dd9;
+}
