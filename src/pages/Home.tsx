@@ -2,6 +2,7 @@
 import CategoryGrid from '../components/CategoryGrid';
 import ProductGrid from '../components/ProductGrid';
 import BestServices from '../components/BestServices';
+import FeaturedPosts from '../components/FeaturedPosts';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <CategoryGrid />
       <ProductGrid />
       <BestServices />
+      <FeaturedPosts />
     </div>
   );
 };
