@@ -28,3 +28,11 @@
   flex: 1;
   text-align: center;
 }
+
+/* completely hide Topbar on mobile*/
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+}
