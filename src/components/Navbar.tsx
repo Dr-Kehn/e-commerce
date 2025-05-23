@@ -4,18 +4,27 @@ import { FaUser, FaHeart, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import styles from './Navbar.module.css';
+import { useState } from 'react';
 
 const Navbar = () => {
   const cartItemCount = useSelector((state: RootState) =>
     state.cart.items.reduce((total, item) => total + item.quantity, 0)
   );
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <Link to="/">Bandage</Link>
       </div>
-      <ul className={styles.links}>
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+      </div>
+      <ul className={`${styles.links} ${menuOpen ? styles.mobileMenu : ''}`}>
         <li><Link to="/">Home</Link></li>
         <li className={styles.dropdown}>
           <Link to="/shop">Shop</Link>
