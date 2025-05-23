@@ -117,6 +117,6 @@
   }
 
   .icons {
-    display: none;
+    gap: 12px;
   }
 }
