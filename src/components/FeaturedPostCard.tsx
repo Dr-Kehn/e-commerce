@@ -32,7 +32,7 @@ const FeaturedPostCard = ({ image, tags, title, description, date, comments }: P
         ))}
       </div>
 
-      <h4 className={styles.title}>{title}</h4>
+      <h4 className={styles.cardTitle}>{title}</h4>
       <p className={styles.description}>{description}</p>
 
       <div className={styles.meta}>
